@@ -44,7 +44,7 @@ async function seed(): Promise<void> {
   const superAdminHash = await bcrypt.hash(superAdminPassword, 10);
   let superAdmin = await User.findOne({ email: superAdminEmail });
   if (!superAdmin) {
-    superAdmin = await User.create({
+    superAdmin = await User.create({ 
       organizationId: null,
       name: 'Super Admin',
       email: superAdminEmail,
