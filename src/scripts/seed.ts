@@ -6,7 +6,7 @@
  * The password is stored as a bcrypt hash of "changeme" (cost 10).
  * Change this before any real deployment.
  */
-import 'dotenv/config';
+import '../shared/loadEnv';
 import bcrypt from 'bcrypt';
 import mongoose from 'mongoose';
 import { connectDB } from '../shared/db';

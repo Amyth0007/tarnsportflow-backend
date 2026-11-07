@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import './shared/loadEnv';
 import http from 'http';
 import express from 'express';
 import { Server as SocketIOServer } from 'socket.io';
